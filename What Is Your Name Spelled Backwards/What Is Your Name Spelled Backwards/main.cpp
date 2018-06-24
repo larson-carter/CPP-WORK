@@ -8,11 +8,31 @@
 
 #include <iostream>
 
+#include <string>
+
+using namespace std;
+
 int main(int argc, const char * argv[]) {
     
-    // insert code here...
+    std::cout << "Enter Your First Name Please: \n";
     
-    std::cout << "Hello, World!\n";
+    std::string inputname;
+    
+    std::getline(std::cin, inputname);
+    
+    std::cout << "Ok, You Entered: ";
+    
+    std::cout <<  inputname;
+    
+    std::cout << "\nNow Let's Spell That Backwards! \n";
+    
+    for(int i = inputname.length() - 1; i >= 0; --i){
+        
+        std::cout << inputname[i];
+        
+    }
+    
+    std::cout << '\n';
     
     return 0;
     

@@ -2,30 +2,32 @@
 
 using namespace std;
 
+int iCanCount[] = {1, 2, 3, 4, 5};
+
 int main()
 
 {
-
-    int iCanCount [] = {1, 2, 3, 4, 5};
+    
+    int lengthOfArray = sizeof(iCanCount) / sizeof(int);
     
     int i = 0;
     
-    size_t lengthOfA = sizeof(iCanCount)/sizeof(iCanCount[0]) ;
+    std::cout << "There are " << lengthOfArray << " total slots!" << std::endl;
     
-    for (i < lengthOfA; i++;) {
+    for (i = 0; i < lengthOfArray; i++)
+    
+    {
         
-        i = i + 1;
+        int totalSlotsLeft = lengthOfArray - i;
         
-        cout << iCanCount[i];
+        std::cout << "The value of slot: " << i << " is, " << iCanCount[i] << std::endl;
+        
+        std::cout << "There are " << totalSlotsLeft - 1 << " slots Left" << std:: endl;
         
     }
-    
-    cout << i;
-    
-    cout << "\n";
-    
-    cout << "PROGRAM DONE!";
-
+   
+    cout << "Program Done Running.";
+   
     return 0;
 
 }

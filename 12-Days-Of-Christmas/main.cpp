@@ -97,6 +97,7 @@ string gifts::twelve(void) {
   return "Twelve drummers drumming";
 }
 int main() {
+   cout << ("\033c");
    days day;
    gifts gift;
    string christmasDays [12] = {

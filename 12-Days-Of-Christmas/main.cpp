@@ -47,18 +47,12 @@ string days::twelve(void) {
 }
 class gifts {
    public:
-      string one(void);
-      string two(void);
-      string three(void);
-      string four(void);
-      string five(void);
-      string six(void);
-      string seven(void);
-      string eight(void);
-      string nine(void);
-      string ten(void);
-      string eleven(void);
-      string twelve(void);
+      string one(void); string two(void);
+      string three(void); string four(void);
+      string five(void); string six(void);
+      string seven(void); string eight(void);
+      string nine(void); string ten(void);
+      string eleven(void); string twelve(void);
 };
 string gifts::one(void) {
   return "And a partridge in a pear tree";
@@ -107,21 +101,20 @@ int main() {
         day.ten(), day.eleven(), day.twelve()
     };
     string gifts [12] = {
-        gift.one(), gift.two(),
-        gift.three(), gift.four(),
-        gift.five(), gift.six(),
-        gift.seven(), gift.eight(),
-        gift.nine(), gift.ten(),
-        gift.eleven(), gift.twelve()
+        gift.one(), gift.two(), gift.three(),
+        gift.four(), gift.five(), gift.six(),
+        gift.seven(), gift.eight(), gift.nine(),
+        gift.ten(), gift.eleven(), gift.twelve()
     };
-  for(int i = 0; i < 12; i++) {
+   for(int i = 0; i < 12; i++) {
         cout << "On the " << christmasDays[i] << " day of christmas, my true love gave"
              << " to me\n";
         if(i == 0) {
             cout << "A partridge in a pear tree\n";
         } else {
-            int c = i + 1;
-            while(c-- > 0) cout << gifts[c] << "\n";
+            for (int c = i; c > -1; c--) {
+              cout << gifts[c] << "\n";
+            }
         }
         cout << "\n";
     }

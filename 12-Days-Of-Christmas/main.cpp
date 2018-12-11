@@ -73,7 +73,7 @@ string gifts::four(void) {
   return "Four calling birds";
 }
 string gifts::five(void) {
-  return "FIVE GOLDEN RINGS";
+  return "Five golden rings";
 }
 string gifts::six(void) {
   return "Six geese a-laying";
